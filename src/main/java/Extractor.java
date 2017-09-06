@@ -28,7 +28,7 @@ public class Extractor
         Document doc = null;
         try
         {
-            doc = Jsoup.parse( readFile( "/Users/bkrebs/Downloads/" + filename + ".htm", Charset.defaultCharset() ) );
+            doc = Jsoup.parse( readFile( "html/" + filename + ".htm", Charset.defaultCharset() ) );
         }
         catch ( final IOException e )
         {

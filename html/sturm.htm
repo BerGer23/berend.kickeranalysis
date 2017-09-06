@@ -1,0 +1,2405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="de-DE" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" >
+<head>
+<title>Spielerliste - Bundesliga - Managerspiel Interactive - kicker</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="Description" content="kicker präsentiert spannende und abwechslungsreiche Games wie das Managerspiel zur Bundesliga in der Interactive-Variante" />
+<meta name="Keywords" content="Games, Managerspiel Interactive, Bundesliga, kicker" />
+<meta name="Author" content="kicker online, Nürnberg, Germany" />
+<meta name="Copyright" content="kicker online, Nürnberg, Germany" />
+<meta name="Email" content="info@kicker.de" />
+<meta name="X-Template-Date" content="2017-9-5T13:24:57+02:00" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta http-equiv="content-type" content="text/html" />
+<meta http-equiv="content-language" content="de" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="X-Imperia-Live-Info" content="" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="google-site-verification" content="YK4CHdX6Q2GSy3NVc_KcTHxLqUo_w737awEnN1KvPFg" />
+<!--Facebook-->
+<meta id="metaFacebookTitel" property="og:title" content="Spielerliste - Bundesliga - Managerspiel Interactive - kicker online" />
+<meta id="metaFacebookDescription" property="og:description" content="kicker präsentiert spannende und abwechslungsreiche Games wie das Managerspiel zur Bundesliga in der Interactive-Variante" />
+<meta id="metaFacebookImage" property="og:image" content="" />
+<meta property="og:type" content="" />
+<meta property="og:url" content="http://manager.kicker.de/interactive/bundesliga/spielerliste" />
+<meta property="og:site_name" content="kicker online" />
+<meta property="fb:admins" content="100001673493920" />
+<meta property="fb:app_id" content="242756395742301" />
+<meta property="fb:page_id" content="140532159333089" />
+<meta property="fb:pages" content="140532159333089" />
+<link id="fonts" rel="stylesheet" type="text/css" href="http://static.kicker.de/generic/styles/kickerfonts_17.35.6456.23186.css" />
+<!--[if IE 7]>
+<link rel="stylesheet" href="http://static.kicker.de/generic/styles/kickerfontawesomeie7_17.35.6456.23186.css">
+<![endif]-->
+<link id="css" rel="stylesheet" type="text/css" href="http://static.kicker.de/generic/styles/defaulthalf_17.35.6456.23186.css" />
+<link rel="stylesheet" type="text/css" href="http://static.kicker.de/generic/styles/print_17.35.6456.23186.css" media="print" /><link rel="alternate stylesheet" title="ovprintcss" type="text/css" href="http://static.kicker.de/generic/styles/previewprint_17.35.6456.23186.css" media="screen" />
+<script type="text/javascript" src="http://static.kicker.de/generic/js/general_17.35.6456.23186.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="http://static.kicker.de/library/image/favicon/32x32_rot.ico" />
+<link rel="alternate" type="application/rss+xml" title="" href="http://rss.kicker.de/news/aktuell" />
+<script type="text/javascript" src="https://script.ioam.de/iam.js"></script> 
+<link rel="manifest" href="http://www.kicker.de/manifest.json?rv=_17.35.6456.23186">
+<meta name="application-name" content="kicker online" />
+<meta name="msapplication-starturl" content="http://www.kicker.de" />
+<meta name="msapplication-navbutton-color" content="#CA0000" />
+<meta name="msapplication-TileColor" content="#CA0000"/>
+<meta name="msapplication-TileImage" content="/library/image/144x144.png"/>
+<meta name="msapplication-square70x70logo" content="/library/image/70x70.png" />
+<meta name="msapplication-square150x150logo" content="/library/image/150x150.png" />
+<meta name="msapplication-wide310x150logo" content="/library/image/310x150.png" />
+<meta name="msapplication-square310x310logo" content="/library/image/310x310.png" />
+ 
+<script type="text/javascript" src="http://static.kicker.de/generic/js/knockout_17.35.6456.23186.js" ></script>
+<meta property="og:title" content="Kicker Managerspiel Interactive | Kult seit 1991" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.kicker.de/manager-interactive" />
+<meta property="og:image" content="http://mediadb.kicker.de/special/manager/manager-bl-int.jpg" />
+<meta property="og:site_name" content="kicker online Managerspiele" />
+<meta property="og:description" content="Stellen Sie Ihr Know-How in Sachen Fußball unter Beweis - auch in der Spielvariante Interactive ist Können und Köpfchen gefragt. Basteln Sie sich anhand des vorgegebenen Budgets Ihr Dream-Team aus allen Spielern der 1., 2. oder 3. Liga. Ihre Spielpunkte errechnen sich während der Saison aus den realen Leistungen (kicker-Note, Tore, Assists etc.) der Profis!" />
+<meta property="fb:admins" content="100001673493920" />
+<meta property="fb:app_id" content="242756395742301" />
+<meta property="fb:page_id" content="140532159333089" /> 
+<meta name="X-NB-AppVersion" content="17.30.6416.14925" />
+<link rel="stylesheet" type="text/css" href="/generic/css/kicker_bl_17.30.6416.14925.css"/>
+<script type="text/javascript" src="/interactive/bundesliga/generic/js/kicker_bl_17.30.6416.14925.js"></script>
+
+<!--Please insert your header here-->
+<script src="//cdn.interactivemedia.net/live/kicker.de/live/globalAdTag.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+var ovAdvertConfig = {
+"enabled":true,
+"zone":"games_managerspiel",
+"pagetype":"artikel",
+"keywords":"",
+"keyValues":"",
+"positions":["cb200","cb200_pos2","cb200_pos3","sb","bb","perf_cb200","ft","sky","pop"]
+};
+ovAdvertising.init();
+</script>
+</head>
+<body id="ovHome"> 
+<div id="fb-root"></div>
+<script type="text/javascript">
+<!--
+var queryString = 'sitemapnode=%2fgames%2finteractive%2fbundesliga%2fspielerliste';
+try { ovToolkit.resURL = ''; } catch (e) { }
+// -->
+</script>
+<span id="skip1"><a href="#authlogbox">Zur Loginbox springen</a></span>
+<span id="skip2"><a href="#navi">Zur Navigation springen</a></span>
+<span id="skip3"><a href="#main">Zum Inhalt springen</a></span>
+<div id="dhtmltooltip"></div>
+<img id="dhtmlpointer" src="http://mediadb.kicker.de/library/image/ic-tooltip-spitze.png" alt=""/>
+<img id="ovIVW" src="http://mediadb.kicker.de/library/image/spacer.gif" alt="" style="display:none;"/>
+<div id="ovTooltip"></div>
+ 
+<!-- SZM VERSION="2.0" -->
+<script type="text/javascript">
+var iam_data = {
+"st":"kicker",
+"cp":"67800",
+"sv": "in",
+"co":"ga_manager_bl_int"
+}
+var iam_fadeout_flash = false;
+var iam_fadeout_iframe = false;
+var iam_fadeout_form = false;
+var iam_position_top = 400;
+try { iom.c(iam_data, 1); }
+catch (e) { console.error("OV: iom.c is not defined") }
+</script>
+<!--/SZM --> 
+<!-- wrapper -->
+<div id="ovWrapper">
+<div class="ovNoprint" style="margin-bottom: 10px;position: relative;z-index: 300;">
+<script type="text/javascript">
+//gqPYbsU("Super")
+</script>
+<div id="ad-sb" ><div id="adpossb"></div><script type="text/javascript">
+if (typeof(IM) != 'undefined') {IM.GlobalAdTag.register('sb','adpossb', true);}
+</script></div>
+<span class='gqPYbsU_end'></span>
+</div>
+<!-- kicker -->
+<div id="ovKicker" class="">
+<!-- header -->
+<div id="ovHeader">
+<div id="ovTools">
+<div class="ovToolsShort">
+<a name="ovanfang" id="ovanfang" href="http://www.kicker.de/news/live-news/schlagzeilen/schlagzeilen_fussball.html" class="ovSz">Schlagzeilen</a>
+<a href="http://www.kicker.de/news/live-news/livescores/livescores_fussball.html" class="ovLs">Livescores</a>
+<a href="http://www.kicker.de/news/live-news/matchkalender/matchkalender.html" class="ovMk">Matchkalender</a>
+<a class="ovRss" href="http://www.kicker.de/news/live-news/rss-feed/371919/artikel_Mit-RSS-immer-informiert.html">RSS</a>
+<div id="rsstooltip" class="rsstooltip">
+<div class="rssttback"> 
+<div class="rssttcontent">
+<div id="ctl00_ControlHeader_default_rss"><a class="rsstt_rss" href="" target="_blank"> per RSS</a></div>
+<div class="rssttsep"></div>
+<div class="rssttsep"></div>
+<a class="rsstt_rss" href="http://www.kicker.de/news/live-news/newsbox/383695/artikel_Die-kicker-Newsbox.html">kicker Newsbox</a>
+<div class="rssttsep"></div>
+<a class="rsstt_infohelp" href="http://www.kicker.de/news/live-news/rss-feed/371919/artikel_Mit-RSS-immer-informiert.html">Info und Hilfe</a>
+</div>
+</div>
+</div>
+</div>
+<div class="ovToolsNavi" id="ovToolsNaviDD">
+<div id="ovToolsNavi1" class="" onmouseover="dropdownmenu2(this,event,'ovToolsNavi1DD',0,10)">
+<span class="">News</span>
+</div>
+<div id="ovToolsNavi2" class="sel" onmouseover="dropdownmenu2(this,event,'ovToolsNavi2DD',0,10)">
+<span class="sel">Games</span>
+</div>
+<div id="ovToolsNavi5" class="">
+<a target="_blank" href="http://esport.kicker.de">eSport</a>
+</div>
+<div id="ovToolsNavi3" class="" onmouseover="dropdownmenu2(this,event,'ovToolsNavi3DD',0,10)">
+<span class="">Community</span>
+</div>
+<div id="ovToolsNavi4" class="">
+<a target="_blank" href="https://shop.kicker.de/?utm_source=Kicker.de&utm_campaign=navi&utm_medium=shophub&utm_content=navi">Shop</a> 
+</div>
+<div id="ovToolsNavi6" class="" onmouseover="dropdownmenu2(this,event,'ovToolsNavi6DD',107,10)">
+<span class="">Abo</span>
+</div>
+<div id="ovToolsNavi1DD" class="ovToolsNaviDD">
+<div class="ovToolsNaviDDRight"><div class="ovToolsNaviDDLeft">
+<a id="ovDDNav2000-0" href="http://www.kicker.de/" style="background-position:0 26px;">Home</a> 
+<a id="ovDDNav1100-1" href="http://www.kicker.de/news/fussball/fussballstartseite.html" style="background-position:-159px 26px;">Fußball</a> 
+<a id="ovDDNav77000-2" href="http://www.kicker.de/news/live-news/schlagzeilen/schlagzeilen_fussball.html" style="background-position:-318px 26px;">Live</a> 
+<a id="ovDDNav22000-3" href="http://www.kicker.de/news/formel1/startseite.html" style="background-position:-477px 26px;">Formel 1</a> 
+<a id="ovDDNav31000-4" href="http://www.kicker.de/news/eishockey/startseite.html" style="background-position:-636px 26px;">Eishockey</a> 
+<a id="ovDDNav36000-5" href="http://www.kicker.de/news/basketball/startseite.html" style="background-position:-795px 26px;">Basketball</a> 
+<a id="ovDDNav37000-6" href="http://www.kicker.de/news/handball/startseite.html" style="background-position:-954px 26px;">Handball</a> 
+<a id="ovDDNav39000-7" href="http://www.kicker.de/news/tennis/startseite.html" style="background-position:-1113px 26px;">Tennis</a> 
+<a id="ovDDNav38000-8" href="http://www.kicker.de/news/wintersport/startseite.html" style="background-position:0 26px;">Wintersport</a> 
+<a id="ovDDNav33000-9" href="http://www.kicker.de/news/radsport/startseite.html" style="background-position:-1272px 26px;">Rad</a> 
+<a id="ovDDNav38250-10" href="http://www.kicker.de/news/nfl/startseite.html" style="background-position:0 26px;">NFL</a> 
+<a id="ovDDNav1200-11" href="http://www.kicker.de/news/mehrsport/startseite.html" style="background-position:-1431px 26px;">Mehr Sport</a> 
+<a id="ovDDNav508024-12" href="http://www.kicker.de/news/olympia/startseite.html" style="background-position:-1749px 26px;">Olympia</a> 
+<a id="ovDDNav43000-13" href="http://www.kicker.de/news/auto/startseite.html" style="background-position:-1908px 26px;">Auto</a> 
+<a id="ovDDNav40000-14" href="http://www.kicker.de/news/video.html" style="background-position:-1590px 26px;">Video</a> 
+</div></div><div class="ovToolsNaviDDBottom"></div>
+</div>
+<div id="ovToolsNavi2DD" class="ovToolsNaviDD">
+<div class="ovToolsNaviDDRight"><div class="ovToolsNaviDDLeft">
+<a id="ovDDNav1400-1" href="http://www.kicker.de/games/startseite/gamesstartseite.html" style="background-position:-159px 26px;">Startseite</a>
+<a id="ovDDNav65000-2" href="http://www.kicker.de/games/classic/startseite/gamesstartseite.html" style="background-position:-318px 26px;">Classic</a>
+<a id="ovDDNav67000-3" href="http://www.kicker.de/games/interactive/startseite/gamesstartseite.html" style="background-position:-477px 26px;">Interactive</a>
+<a id="ovDDNav68000-4" href="http://www.kicker.de/games/pro/startseite/gamesstartseite.html" style="background-position:-636px 26px;">Pro</a>
+<a id="ovDDNav75520-5" href="http://www.kicker.de/games/football_stars_manager/gamesstartseite.html" style="background-position:-1590px 26px;">Football-Stars Manager</a>
+<a id="ovDDNav75530-6" href="http://www.kicker.de/games/football_stars_challenges/gamesstartseite.html" style="background-position:-1272px 26px;">Football-Stars Challenges</a>
+<a id="ovDDNav69000-7" href="http://tipp.kicker.de/startseite.html" style="background-position:-795px 26px;">Tippspiel</a>
+<a id="ovDDNav74500-8" href="http://www.kicker.de/games/kicker-glory-run/gloryrun.html" style="background-position:-1749px 26px;">GloryRun</a>
+</div></div><div class="ovToolsNaviDDBottom"></div>
+</div>
+<div id="ovToolsNavi3DD" class="ovToolsNaviDD">
+<div class="ovToolsNaviDDRight"><div class="ovToolsNaviDDLeft">
+<a id="ovDDNav100020-0" href="http://www.kicker.de/community/info/artikel/511628/" style="background-position:-159px 26px;">Info</a>
+<a id="ovDDNav100400-2" href="https://secure.kicker.de/community/login" style="background-position:-318px 26px;">Anmelden</a>
+<a id="ovDDNav100010-3" href="http://community.kicker.de/community/" style="background-position:-477px 26px;">Meine Startseite</a>
+<a id="ovDDNav100410-4" href="http://community.kicker.de/community/card/" style="background-position:-636px 26px;">Visitenkarte &amp; Profil</a>
+<a id="ovDDNav100011-5" href="http://community.kicker.de/community/foren/" style="background-position:-795px 26px;">Foren</a>
+<a id="ovDDNav100420-6" href="http://community.kicker.de/community/friends/" style="background-position:-954px 26px;">Freunde</a>
+<a id="ovDDNav100430-7" href="http://community.kicker.de/community/bookmarks/" style="background-position:-1113px 26px;">Bookmarks</a>
+<a id="ovDDNav508004-8" href="http://community.kicker.de/community/messages/Eingang/" style="background-position:-1272px 26px;">Messages</a>
+<a id="ovDDNav100014-9" href="http://www.kicker.de/community/newsletter/artikel/244964/" style="background-position:-1431px 26px;">Newsletter</a>
+</div></div><div class="ovToolsNaviDDBottom"></div>
+</div>
+<div id="ovToolsNavi4DD" class="ovToolsNaviDD">
+<div class="ovToolsNaviDDRight"><div class="ovToolsNaviDDLeft">
+</div></div><div class="ovToolsNaviDDBottom"></div>
+</div>
+<div id="ovToolsNavi6DD" class="ovToolsNaviDD">
+<div class="ovToolsNaviDDRight"><div class="ovToolsNaviDDLeft">
+<a id="ovDDNav103100-0" href="http://leserservice.kicker.de/?onwewe=0602&utm_campaign=kickerde-navi&utm_term=kicker-abo-angebote" style="background-position:0 26px;">kicker Abo</a>
+<a id="ovDDNav103110-1" href="http://leserservice.kicker.de/emagazine?onwewe=0601&utm_campaign=kickerde-navi&utm_term=emagazine-abo-angebote" style="background-position:0 26px;">eMagazine Abo</a>
+<a id="ovDDNav103080-2" href="http://leserservice.kicker.de/erlebniswelt/?onwewe=0601&utm_campaign=kickerde-navi&utm_term=erlebniswelt" style="background-position:0 26px;">Erlebniswelt</a>
+<a id="ovDDNav101220-3" href="https://emagazine.kicker.de/de/profiles/6925623b4e1b/editions" style="background-position:-477px 26px;">eMagazine-Login</a>
+<a id="ovDDNav101230-4" href="http://www.kicker.de/abo-shop/lesesaal/624781/spartikel_kicker-lesesaal.html" style="background-position:-1590px 26px;">Lesesaal</a>
+<a id="ovDDNav101370-5" href="https://shop.kicker.de/kicker-produkte/einzelhefte/?utm_source=Kicker.de&utm_campaign=navi&utm_medium=button&utm_content=einzelheftebestellen" style="background-position:-795px 26px;">Einzelhefte bestellen</a>
+<a id="ovDDNav103090-6" href="http://www.mykiosk.com/suche/11000160/kicker/" style="background-position:0 26px;">kicker am Kiosk kaufen</a>
+</div></div><div class="ovToolsNaviDDBottom"></div>
+</div>
+</div> 
+</div>
+<div id="ovBranding">
+<div class="ovLogo">
+<a class="kickerlogo" href="http://www.kicker.de/"><img alt="kicker online" title="kicker online" src="http://mediadb.kicker.de/library/image/logo-kicker.png" width="188" height="57"/></a>
+</div>
+<div class="ovSearch">
+<div class="ovSearchForm">
+<form method="get" action="http://www.kicker.de/home/suchergebnisse.html">
+<input id="inputsuche" name="suchbegriff" type="text" class="ovSearchInp" value="" placeholder="Suche" onkeypress="createCookie('erweitertesuche', '0');return ovToolkit.keyCheckEnter(event,this.form)"/>
+<input type="hidden" name="suchbegriffsent" value="true" />
+<input type="submit" value="" class="ovSearchBtn" />
+</form>
+<a class="erwsuche" href="http://www.kicker.de/home/erweitertesuche.html">erweiterte Suche</a>
+</div>
+<div id="autocomplete_choices" class="autocomplete"></div>
+<script type="text/javascript">
+/*<[CDATA[*/
+new Ajax.Autocompleter("inputsuche", "autocomplete_choices", "http://www.kicker.de/ajax.ashx?ajaxtype=autocomplete", {
+minChars: 3,
+frequency: 0.25
+});
+/*]]>*/
+</script>
+</div>
+<div class="ovSocialHeader">
+<a href="https://www.facebook.com/kickeronline" target="_blank" class="fa"><i class="icon-facebook"></i></a>
+<a href="http://www.kicker.de/news/live-news/twitter/507014/artikel_kicker-bei-Twitter.html " class="tw"><i class="icon-twitter"></i></a>
+<a href="https://www.youtube.com/user/kickertv/" target="_blank" class="yt"><i class="icon-youtube"></i></a>
+<a href="https://instagram.com/kicker" target="_blank" class="in"><i class="icon-instagram"></i></a>
+</div>
+<div id="ovLogin"> 
+<input type="hidden" id="rootPath" value="http://www.kicker.de" />
+<div id="ovUserisloggedin" class="">
+<div id="ovUserisfbloggedin" style="display:none;"><div class="fbLoginInfo">eingeloggt via Facebook</div></div>
+<div><i class="icon-group"></i><a class="ovLoginOut" href="https://secure.kicker.de/community/logout/"><b>Community</b> (Logout)</a></div>
+<div><a id="ovLoginnickname" href="http://community.kicker.de/community/card/"></a><span id="ovNewmailnav"></span></div>
+</div>
+<div id="ovUserisloggedout">
+<a class="ovLoginBtn" href="https://secure.kicker.de/community/login" onclick="ovAuth.openLoginPage(this.href); return false;"><i class="icon-group"></i>Anmelden</a>
+</div>
+<script type="text/javascript">
+var ovFbChannelURL = 'http://manager.kicker.de/facebookChannel.html';
+ovAuth.checkLoginStausBeforeFB(); //==> kommt in socialSharePrivacy
+//init socialSharePrivacy
+document.observe("dom:loaded", function() {
+socialSharePrivacy.init({
+'id': 'socialSharePrivacyCtrl' // Element ID
+//services : {
+//facebook : { 'status' : 'on' },
+//twitter: { 'status': 'on' },
+//gplus: { 'status': 'on' }
+//}
+});
+});
+</script>
+</div>
+</div>
+<!-- navi -->
+<div id="ovNavi" style="height:123px">
+<ul id="ovNaviTop">
+<li >
+<a href="http://www.kicker.de/">Home</a>
+
+</li>
+<li >
+<a href="http://www.kicker.de/games/startseite/gamesstartseite.html">Startseite</a>
+
+</li>
+<li >
+<a href="http://www.kicker.de/games/classic/startseite/gamesstartseite.html">Classic</a>
+
+</li>
+<li class="ovNaviTopOn">
+<a href="http://www.kicker.de/games/interactive/startseite/gamesstartseite.html">Interactive</a>
+<ul id="ovNaviSub">
+<li >
+<a class="Managerspiel Interactive Info" href="http://www.kicker.de/games/interactive/startseite/gamesstartseite.html" >
+Managerspiel Interactive Info
+</a>
+</li>
+<li class="ovNaviSubOn">
+<a class="Bundesliga" href="http://manager.kicker.de/interactive/bundesliga/meinteam/meinkader" >
+Bundesliga
+</a>
+<div id="ovNaviL3" class="ovNaviL3Left">
+<div class="ovNaviL3Right"><div class="ovNaviL3Mid">
+<div class="ovNaviL3First"><div>Bundesliga:</div></div>
+<div class="ovNaviL3BorderLeft"><div class="ovNaviL3BorderRight"><div class="ovNaviL3BorderMid">
+<div >
+<div class="ovNaviL3ALeft"><div class="ovNaviL3ARight">
+<a class="" href="http://manager.kicker.de/interactive/bundesliga/meinteam/meinkader" >
+Mein Team
+</a>
+</div></div>
+</div>
+<div >
+<div class="ovNaviL3ALeft"><div class="ovNaviL3ARight">
+<a class="" href="http://manager.kicker.de/interactive/bundesliga/managerliga/spieltagswertung" >
+Managerliga
+</a>
+</div></div>
+</div>
+<div class="ovNaviL3On">
+<div class="ovNaviL3ALeft"><div class="ovNaviL3ARight">
+<a class="" href="http://manager.kicker.de/interactive/bundesliga/spielerliste" >
+Spielerliste
+</a>
+</div></div>
+</div>
+<div >
+<div class="ovNaviL3ALeft"><div class="ovNaviL3ARight">
+<a class="" href="http://manager.kicker.de/interactive/bundesliga/erinnerungen" >
+Erinnerungen
+</a>
+</div></div>
+</div>
+<div >
+<div class="ovNaviL3ALeft"><div class="ovNaviL3ARight">
+<a class="" href="http://www.kicker.de/games/interactive/bundesliga/spielregeln/artikel/679147" >
+Spielregeln
+</a>
+</div></div>
+</div>
+<div >
+<div class="ovNaviL3ALeft"><div class="ovNaviL3ARight">
+<a class="" href="http://manager.kicker.de/interactive/bundesliga/faq" >
+FAQ
+</a>
+</div></div>
+</div>
+<div >
+<div class="ovNaviL3ALeft"><div class="ovNaviL3ARight">
+<a class="" href="http://www.kicker.de/games/interactive/bundesliga/preis/artikel/679149" >
+Preise
+</a>
+</div></div>
+</div>
+</div></div></div></div></div></div>
+</li>
+<li >
+<a class="2. Bundesliga" href="http://manager.kicker.de/interactive/2bundesliga/meinteam/meinkader" >
+2. Bundesliga
+</a>
+</li>
+<li >
+<a class="3. Liga" href="http://manager.kicker.de/interactive/3liga/meinteam/meinkader" >
+3. Liga
+</a>
+</li>
+</ul><div id="wmfanguide-bg"></div>
+</li>
+<li >
+<a href="http://www.kicker.de/games/pro/startseite/gamesstartseite.html">Pro</a>
+
+</li>
+<li >
+<a href="http://www.kicker.de/games/football_stars_manager/gamesstartseite.html">Football-Stars Manager</a>
+
+</li>
+<li >
+<a href="http://www.kicker.de/games/football_stars_challenges/gamesstartseite.html">Football-Stars Challenges</a>
+
+</li>
+<li >
+<a href="http://tipp.kicker.de/startseite.html">Tippspiel</a>
+
+</li>
+<li >
+<a href="http://www.kicker.de/games/kicker-glory-run/gloryrun.html">GloryRun</a>
+
+</li>
+</ul>
+</div>
+<script type="text/javascript">
+//gqPYbsU("Billboard")
+</script>
+<div id="ad-bb" ><div id="adposbb"></div><script type="text/javascript">
+if (typeof(IM) != 'undefined') {IM.GlobalAdTag.register('bb','adposbb', true);}
+</script></div>
+<span class='gqPYbsU_end'></span>
+
+<script type="text/javascript">
+<!--
+ovToolkit.CheckNavi();
+// -->
+</script>
+<!-- /navi -->
+</div>
+<!-- /header -->
+<!-- main start --> 
+<div id="ovMain" class="">
+<div id="ovPageReload" class="ltreloadLiveTicker" style="display:none;"><div><a href="javascript:location.reload();"><i class="icon-repeat icon-spinX"></i>NEU LADEN</a></div></div>
+<!-- 50JBL wrapper div start -->
+<!-- topmodul -->
+
+<iframe style="position:relative; left:-9999px; display:none;" id="refreshWerbungSuper"></iframe>
+<iframe style="position:relative; left:-9999px; display:none;" id="refreshWerbungSky"></iframe>
+<iframe style="position:relative; left:-9999px; display:none;" id="refreshWerbungPoweredBy"></iframe>
+<div id="kickerfbm">
+
+<!-- /topmodul -->
+<!-- content -->
+<div id="ovContent">
+
+<h2>Spielerliste</h2>
+<form action="/interactive/bundesliga/spielerliste" method="get"> 
+<div class="liste">
+<div class="listenitem1"><b>Position:</b></div>
+<div class="listenitem2"><b>Verein:</b></div>
+<br class="clear" />
+<div class="listenitem1">
+<select name="ctl00$PlaceHolderContent$position" id="ctl00_PlaceHolderContent_position" onchange="ovSubmitForm(this.form)" class="listenselect">
+<option value="0">Alle</option>
+<option value="1">Tor</option>
+<option value="2">Abwehr</option>
+<option value="3">Mittelfeld</option>
+<option selected="selected" value="4">Sturm</option>
+</select>
+</div>
+<div class="listenitem2">
+<select name="ctl00$PlaceHolderContent$verein" id="ctl00_PlaceHolderContent_verein" onchange="ovSubmitForm(this.form)" class="listenselect">
+<option selected="selected" value="0">Alle</option>
+<option value="16">1. FC K&#246;ln</option>
+<option value="30">1. FSV Mainz 05</option>
+<option value="9">Bayer 04 Leverkusen</option>
+<option value="14">Bayern M&#252;nchen</option>
+<option value="15">Bor. M&#246;nchengladbach</option>
+<option value="17">Borussia Dortmund</option>
+<option value="32">Eintracht Frankfurt</option>
+<option value="91">FC Augsburg</option>
+<option value="2">FC Schalke 04</option>
+<option value="12">Hamburger SV</option>
+<option value="58">Hannover 96</option>
+<option value="29">Hertha BSC</option>
+<option value="15778">RB Leipzig</option>
+<option value="7">SC Freiburg</option>
+<option value="3209">TSG Hoffenheim</option>
+<option value="11">VfB Stuttgart</option>
+<option value="24">VfL Wolfsburg</option>
+<option value="4">Werder Bremen</option>
+</select>
+</div>
+</div>
+<div class="sep9">&nbsp;</div> 
+<div class="buttonbox">
+<button id="Auswahl" class="btn" type="button" onclick="ovSubmitForm(this.form)">Ausw&auml;hlen</button> 
+</div>
+</form>
+<br />
+<div class="ad_rect_wide">
+<div id="rect_anz" class="ad-head">- Anzeige -</div>
+</div>
+<h3 class="thead580">Spielerliste</h3>
+<div class="tborder-b-s"><div class="tborder-r-s"><div class="tborder-t"><div class="tborder-l">
+<table cellspacing="0" cellpadding="0" class="tStat" summary="" width="100%">
+<tr>
+<th class="alignleft first"><a class="headlink" href="/interactive/bundesliga/spielerliste?position=4&amp;verein=0&amp;SortIndex=0&amp;SortOrder=DESC">Spieler</a></th>
+<th>&nbsp;</th>
+ <th class="alignleft"><a class="headlink" href="/interactive/bundesliga/spielerliste?position=4&amp;verein=0&amp;SortIndex=1&amp;SortOrder=ASC">Verein</a></th>
+ <th>Pos.</th>
+<th class="alignright"><a class="headlink" href="/interactive/bundesliga/spielerliste?position=4&amp;verein=0&amp;SortIndex=2&amp;SortOrder=ASC">Mio.</a>&nbsp;<img src="http://mediadb.kicker.de/library/image/ic-sort-down.gif" alt="" /></th>
+<th class="alignright" style="width:30px;"><a class="headlink" href="/interactive/bundesliga/spielerliste?position=4&amp;verein=0&amp;SortIndex=3&amp;SortOrder=ASC">PI</a></th>
+<th class="alignright" style="width:30px;"><a class="headlink" href="/interactive/bundesliga/spielerliste?position=4&amp;verein=0&amp;SortIndex=4&amp;SortOrder=ASC">DN</a></th>
+<th class="alignright"><a class="headlink" href="/interactive/bundesliga/spielerliste?position=4&amp;verein=0&amp;SortIndex=7&amp;SortOrder=ASC">PI V.</a></th>
+<th class="alignright"><a class="headlink" href="/interactive/bundesliga/spielerliste?position=4&amp;verein=0&amp;SortIndex=8&amp;SortOrder=ASC">DN V.</a></th>
+ <th class="alignright last">&nbsp;</th>
+</tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/51570"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/51570_14_201789115827328.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/51570">Lewandowski</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayern-muenchen-14/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2018/fussball/vereine/s/14_20170731074.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayern-muenchen-14/vereinsinformationen.html">Bayern</a></td>
+<td >STU</td>
+<td class="alignright">8,5</td>
+<td class="alignright">25</td>
+<td class="alignright">2,5</td>
+<td class="alignright">291</td>
+<td class="alignright">2,7</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(51570, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/58396"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/58396_17_2017814105012799.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/58396">Aubameyang</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/17_20150212643.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html">Dortmund</a></td>
+<td >STU</td>
+<td class="alignright">8,5</td>
+<td class="alignright">18</td>
+<td class="alignright">2,5</td>
+<td class="alignright">215</td>
+<td class="alignright">3,1</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(58396, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/67074"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/67074_15778_2017814105014700.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/67074">Werner</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/rasenballsport-leipzig-15778/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2015/fussball/vereine/s/15778_20161005551.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/rasenballsport-leipzig-15778/vereinsinformationen.html">Leipzig</a></td>
+<td >STU</td>
+<td class="alignright">6,4</td>
+<td class="alignright">17</td>
+<td class="alignright">3,0</td>
+<td class="alignright">236</td>
+<td class="alignright">2,8</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(67074, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/59041"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/59041_3209_2017714143443193.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/59041">Kramaric</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2017/fussball/vereine/s/3209_20160810469.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html">Hoffenheim</a></td>
+<td >STU</td>
+<td class="alignright">6,0</td>
+<td class="alignright">13</td>
+<td class="alignright">2,5</td>
+<td class="alignright">187</td>
+<td class="alignright">3,0</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(59041, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/29909"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/29909_24_2017828141212515.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/29909">Gomez</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/24.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html">Wolfsburg</a></td>
+<td >STU</td>
+<td class="alignright">5,5</td>
+<td class="alignright">-6</td>
+<td class="alignright">4,8</td>
+<td class="alignright">96</td>
+<td class="alignright">3,7</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(29909, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/39183"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/39183_15_201773116361524.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/39183">Stindl</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/15_20160215710.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html">Gladbach</a></td>
+<td >STU</td>
+<td class="alignright">5,5</td>
+<td class="alignright">7</td>
+<td class="alignright">3,3</td>
+<td class="alignright">142</td>
+<td class="alignright">3,2</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(39183, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/41678"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/41678_4_2017720152552131.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/41678">Kruse</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/4_20150225112.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html">Bremen</a></td>
+<td >STU</td>
+<td class="alignright">5,5</td>
+<td class="alignright">-2</td>
+<td class="alignright">4,3</td>
+<td class="alignright">175</td>
+<td class="alignright">2,8</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(41678, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/40133"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/40133_3209_201781711231964.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/40133">Wagner</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2017/fussball/vereine/s/3209_20160810469.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html">Hoffenheim</a></td>
+<td >STU</td>
+<td class="alignright">4,8</td>
+<td class="alignright">7</td>
+<td class="alignright">2,5</td>
+<td class="alignright">142</td>
+<td class="alignright">3,2</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(40133, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/44484"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/44484_15_201773116362625.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/44484">Raffael</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/15_20160215710.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html">Gladbach</a></td>
+<td >STU</td>
+<td class="alignright">4,8</td>
+<td class="alignright">10</td>
+<td class="alignright">2,8</td>
+<td class="alignright">77</td>
+<td class="alignright">3,3</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(44484, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/48998"><img src="http://mediadb.kicker.de/2017/fussball/spieler/s/48998_9_201672710534903.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/48998">Volland</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayer-leverkusen-9/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/9_20151221384.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayer-leverkusen-9/vereinsinformationen.html">Leverkusen</a></td>
+<td >STU</td>
+<td class="alignright">4,5</td>
+<td class="alignright">0</td>
+<td class="alignright">4,0</td>
+<td class="alignright">46</td>
+<td class="alignright">3,6</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(48998, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/50855"><img src="http://mediadb.kicker.de/2017/fussball/spieler/s/50855_610_20160914714.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/50855">Yarmolenko</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/17_20150212643.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html">Dortmund</a></td>
+<td >STU</td>
+<td class="alignright">4,5</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(50855, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/68292"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/68292_2_2017713154051901.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/68292">Burgstaller</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-schalke-04-2/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/2.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-schalke-04-2/vereinsinformationen.html">Schalke</a></td>
+<td >STU</td>
+<td class="alignright">4,2</td>
+<td class="alignright">-1</td>
+<td class="alignright">4,0</td>
+<td class="alignright">86</td>
+<td class="alignright">3,4</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(68292, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/82915"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/82915_2_201771315405816.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/82915">Embolo</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-schalke-04-2/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/2.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-schalke-04-2/vereinsinformationen.html">Schalke</a></td>
+<td >STU</td>
+<td class="alignright">4,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">23</td>
+<td class="alignright">3,4</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(82915, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/51275"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/51275_17_2017814105012239.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/51275">Schürrle</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/17_20150212643.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html">Dortmund</a></td>
+<td >STU</td>
+<td class="alignright">3,5</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">42</td>
+<td class="alignright">3,4</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(51275, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/66753"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/66753_3209_20170807525.png" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/66753">Gnabry</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2017/fussball/vereine/s/3209_20160810469.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html">Hoffenheim</a></td>
+<td >STU</td>
+<td class="alignright">3,4</td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+<td class="alignright">111</td>
+<td class="alignright">3,3</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(66753, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/76446"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/76446_15778_201771815121571.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/76446">Poulsen</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/rasenballsport-leipzig-15778/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2015/fussball/vereine/s/15778_20161005551.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/rasenballsport-leipzig-15778/vereinsinformationen.html">Leipzig</a></td>
+<td >STU</td>
+<td class="alignright">3,4</td>
+<td class="alignright">2</td>
+<td class="alignright">3,5</td>
+<td class="alignright">114</td>
+<td class="alignright">3,1</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(76446, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/78876"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/78876_16_201772510017200.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/78876">Osako</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/16_20150226339.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html">Köln</a></td>
+<td >STU</td>
+<td class="alignright">3,2</td>
+<td class="alignright">0</td>
+<td class="alignright">4,0</td>
+<td class="alignright">136</td>
+<td class="alignright">3,1</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(78876, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/81292"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/81292_16_201772510018315.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/81292">Cordoba</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/16_20150226339.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html">Köln</a></td>
+<td >STU</td>
+<td class="alignright">3,2</td>
+<td class="alignright">9</td>
+<td class="alignright">3,0</td>
+<td class="alignright">87</td>
+<td class="alignright">3,4</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(81292, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/31756"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/31756_29_2017825112545803.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/31756">Ibisevic</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2013/fussball/vereine/s/29_20150226958.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html">Hertha</a></td>
+<td >STU</td>
+<td class="alignright">3,0</td>
+<td class="alignright">1</td>
+<td class="alignright">4,0</td>
+<td class="alignright">107</td>
+<td class="alignright">3,5</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(31756, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/39065"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/39065_4_2017720152551714.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/39065">Bartels</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/4_20150225112.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html">Bremen</a></td>
+<td >STU</td>
+<td class="alignright">3,0</td>
+<td class="alignright">-4</td>
+<td class="alignright">4,5</td>
+<td class="alignright">137</td>
+<td class="alignright">3,2</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(39065, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/70806"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/70806_17_201781410501544.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/70806">Philipp</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/17_20150212643.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html">Dortmund</a></td>
+<td >STU</td>
+<td class="alignright">3,0</td>
+<td class="alignright">9</td>
+<td class="alignright">3,0</td>
+<td class="alignright">110</td>
+<td class="alignright">3,2</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(70806, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/33715"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/33715_29_2017825112545912.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/33715">Kalou</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2013/fussball/vereine/s/29_20150226958.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html">Hertha</a></td>
+<td >STU</td>
+<td class="alignright">2,8</td>
+<td class="alignright">-2</td>
+<td class="alignright">4,3</td>
+<td class="alignright">46</td>
+<td class="alignright">3,9</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(33715, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/50433"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/50433_12_20178316446686.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/50433">Hahn</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/12_20150226216.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html">HSV</a></td>
+<td >STU</td>
+<td class="alignright">2,8</td>
+<td class="alignright">7</td>
+<td class="alignright">3,5</td>
+<td class="alignright">24</td>
+<td class="alignright">4,0</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(50433, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/83543"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/83543_512_2017817115845576.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/83543">Origi</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/24.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html">Wolfsburg</a></td>
+<td >STU</td>
+<td class="alignright">2,8</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(83543, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/88828"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/88828_32_201786121944899.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/88828">Haller</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/32_20150225964.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html">E. Frankfurt</a></td>
+<td >STU</td>
+<td class="alignright">2,8</td>
+<td class="alignright">8</td>
+<td class="alignright">3,0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(88828, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/44180"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/44180_11_201772510010175.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/44180">Terodde</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfb-stuttgart-11/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2015/fussball/vereine/s/11_20150226639.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfb-stuttgart-11/vereinsinformationen.html">Stuttgart</a></td>
+<td >STU</td>
+<td class="alignright">2,7</td>
+<td class="alignright">-2</td>
+<td class="alignright">4,3</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(44180, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/63803"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/63803_3209_2017714143443694.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/63803">Uth</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2017/fussball/vereine/s/3209_20160810469.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html">Hoffenheim</a></td>
+<td >STU</td>
+<td class="alignright">2,7</td>
+<td class="alignright">11</td>
+<td class="alignright">3,0</td>
+<td class="alignright">84</td>
+<td class="alignright">3,1</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(63803, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/65795"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/65795_58_201782312493668.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/65795">Jonathas</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/58_20150226460.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html">Hannover</a></td>
+<td >STU</td>
+<td class="alignright">2,7</td>
+<td class="alignright">4</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(65795, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/69159"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/69159_7_20178315517579.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/69159">Niederlechner</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/sc-freiburg-7/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2013/fussball/vereine/s/7_20150226893.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/sc-freiburg-7/vereinsinformationen.html">Freiburg</a></td>
+<td >STU</td>
+<td class="alignright">2,7</td>
+<td class="alignright">7</td>
+<td class="alignright">3,5</td>
+<td class="alignright">119</td>
+<td class="alignright">3,4</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(69159, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/74645"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/74645_15_201773116365692.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/74645">Hazard</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/15_20160215710.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html">Gladbach</a></td>
+<td >STU</td>
+<td class="alignright">2,7</td>
+<td class="alignright">8</td>
+<td class="alignright">3,0</td>
+<td class="alignright">67</td>
+<td class="alignright">3,5</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(74645, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/86370"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/86370_15778_201771815124828.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/86370">Augustin</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/rasenballsport-leipzig-15778/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2015/fussball/vereine/s/15778_20161005551.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/rasenballsport-leipzig-15778/vereinsinformationen.html">Leipzig</a></td>
+<td >STU</td>
+<td class="alignright">2,7</td>
+<td class="alignright">13</td>
+<td class="alignright">1,5</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(86370, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/68317"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/68317_29_2017825112548954.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/68317">Selke</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2013/fussball/vereine/s/29_20150226958.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html">Hertha</a></td>
+<td >STU</td>
+<td class="alignright">2,6</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">22</td>
+<td class="alignright">4,1</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(68317, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/29567"><img src="http://mediadb.kicker.de/2017/fussball/spieler/s/29567_9_2016727105250310.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/29567">Kießling</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayer-leverkusen-9/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/9_20151221384.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayer-leverkusen-9/vereinsinformationen.html">Leverkusen</a></td>
+<td >STU</td>
+<td class="alignright">2,5</td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+<td class="alignright">48</td>
+<td class="alignright">3,3</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(29567, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/54727"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/54727_15_201781817435935.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/54727">Bobadilla</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/15_20160215710.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html">Gladbach</a></td>
+<td >STU</td>
+<td class="alignright">2,5</td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+<td class="alignright">77</td>
+<td class="alignright">3,1</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(54727, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/81849"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/81849_30_201771815124102.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/81849">De Blasis</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/30_20150226018.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html">Mainz</a></td>
+<td >STU</td>
+<td class="alignright">2,5</td>
+<td class="alignright">-1</td>
+<td class="alignright">4,5</td>
+<td class="alignright">67</td>
+<td class="alignright">3,6</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(81849, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/101173"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/101173_24_2017828141212156.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/101173">Dimata</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/24.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html">Wolfsburg</a></td>
+<td >STU</td>
+<td class="alignright">2,5</td>
+<td class="alignright">-3</td>
+<td class="alignright">4,3</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(101173, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/27813"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/27813_32_201786121940583.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/27813">Meier</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/32_20150225964.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html">E. Frankfurt</a></td>
+<td >STU</td>
+<td class="alignright">2,4</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">42</td>
+<td class="alignright">3,7</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(27813, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/39152"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/39152_58_201771815111361.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/39152">Harnik</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/58_20150226460.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html">Hannover</a></td>
+<td >STU</td>
+<td class="alignright">2,4</td>
+<td class="alignright">12</td>
+<td class="alignright">3,3</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(39152, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/40709"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/40709_3209_2017714143432917.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/40709">Szalai</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2017/fussball/vereine/s/3209_20160810469.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html">Hoffenheim</a></td>
+<td >STU</td>
+<td class="alignright">2,4</td>
+<td class="alignright">1</td>
+<td class="alignright">4,0</td>
+<td class="alignright">73</td>
+<td class="alignright">3,1</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(40709, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/43169"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/43169_7_20178315515117.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/43169">Petersen</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/sc-freiburg-7/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2013/fussball/vereine/s/7_20150226893.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/sc-freiburg-7/vereinsinformationen.html">Freiburg</a></td>
+<td >STU</td>
+<td class="alignright">2,4</td>
+<td class="alignright">2</td>
+<td class="alignright">3,5</td>
+<td class="alignright">83</td>
+<td class="alignright">3,5</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(43169, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/64101"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/64101_12_20178316446876.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/64101">Wood</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/12_20150226216.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html">HSV</a></td>
+<td >STU</td>
+<td class="alignright">2,4</td>
+<td class="alignright">1</td>
+<td class="alignright">4,3</td>
+<td class="alignright">-5</td>
+<td class="alignright">4,2</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(64101, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/85792"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/85792_30_201771815124774.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/85792">Muto</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/30_20150226018.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html">Mainz</a></td>
+<td >STU</td>
+<td class="alignright">2,4</td>
+<td class="alignright">4</td>
+<td class="alignright">3,5</td>
+<td class="alignright">48</td>
+<td class="alignright">3,5</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(85792, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/72190"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/72190_30_201771815120371.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/72190">Fischer</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/30_20150226018.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html">Mainz</a></td>
+<td >STU</td>
+<td class="alignright">2,3</td>
+<td class="alignright">1</td>
+<td class="alignright">4,0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(72190, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/94182"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/94182_30_201771815126193.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/94182">Kodro</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/30_20150226018.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html">Mainz</a></td>
+<td >STU</td>
+<td class="alignright">2,2</td>
+<td class="alignright">2</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(94182, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/48288"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/48288_11_201772510010241.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/48288">Ginczek</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfb-stuttgart-11/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2015/fussball/vereine/s/11_20150226639.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfb-stuttgart-11/vereinsinformationen.html">Stuttgart</a></td>
+<td >STU</td>
+<td class="alignright">2,0</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(48288, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/62752"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/62752_91_201771815116973.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/62752">Finnbogason</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-augsburg-91/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/91_20160502808.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-augsburg-91/vereinsinformationen.html">Augsburg</a></td>
+<td >STU</td>
+<td class="alignright">2,0</td>
+<td class="alignright">5</td>
+<td class="alignright">3,8</td>
+<td class="alignright">31</td>
+<td class="alignright">3,5</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(62752, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/66530"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/66530_58_201771815118965.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/66530">Füllkrug</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/58_20150226460.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html">Hannover</a></td>
+<td >STU</td>
+<td class="alignright">2,0</td>
+<td class="alignright">-2</td>
+<td class="alignright">4,3</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(66530, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/73214"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/73214_32_201786121943695.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/73214">Hrgota</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/32_20150225964.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html">E. Frankfurt</a></td>
+<td >STU</td>
+<td class="alignright">2,0</td>
+<td class="alignright">2</td>
+<td class="alignright"></td>
+<td class="alignright">27</td>
+<td class="alignright">4,0</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(73214, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/51072"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/51072_2_2017713154048571.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/51072">di Santo</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-schalke-04-2/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/2.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-schalke-04-2/vereinsinformationen.html">Schalke</a></td>
+<td >STU</td>
+<td class="alignright">1,8</td>
+<td class="alignright">5</td>
+<td class="alignright">3,5</td>
+<td class="alignright">7</td>
+<td class="alignright">4,1</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(51072, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/57369"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/57369_4_20170904097.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/57369">Belfodil</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/4_20150225112.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html">Bremen</a></td>
+<td >STU</td>
+<td class="alignright">1,8</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(57369, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/84809"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/84809_32_201786121944513.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/84809">Jovic</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/32_20150225964.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html">E. Frankfurt</a></td>
+<td >STU</td>
+<td class="alignright">1,8</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(84809, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/87238"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/87238_11_201772510021588.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/87238">Donis</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfb-stuttgart-11/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2015/fussball/vereine/s/11_20150226639.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfb-stuttgart-11/vereinsinformationen.html">Stuttgart</a></td>
+<td >STU</td>
+<td class="alignright">1,7</td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(87238, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/54894"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/54894_16_201772510010800.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/54894">Zoller</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/16_20150226339.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html">Köln</a></td>
+<td >STU</td>
+<td class="alignright">1,6</td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+<td class="alignright">12</td>
+<td class="alignright">4,0</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(54894, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/72446"><img src="http://mediadb.kicker.de/2017/fussball/spieler/s/72446_9_2016727105319763.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/72446">Pohjanpalo</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayer-leverkusen-9/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/9_20151221384.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayer-leverkusen-9/vereinsinformationen.html">Leverkusen</a></td>
+<td >STU</td>
+<td class="alignright">1,6</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">37</td>
+<td class="alignright">3,2</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(72446, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/54614"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/54614_16_201772510010723.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/54614">Rudnevs</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/16_20150226339.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html">Köln</a></td>
+<td >STU</td>
+<td class="alignright">1,5</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">43</td>
+<td class="alignright">3,4</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(54614, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/69186"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/69186_15_20177311636597.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/69186">Drmic</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/15_20160215710.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html">Gladbach</a></td>
+<td >STU</td>
+<td class="alignright">1,5</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">8</td>
+<td class="alignright">4,5</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(69186, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/70947"><img src="http://mediadb.kicker.de/2017/fussball/spieler/s/70947_32_2016722145310375.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/70947">Rebic</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/32_20150225964.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html">E. Frankfurt</a></td>
+<td >STU</td>
+<td class="alignright">1,5</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright">66</td>
+<td class="alignright">3,3</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(70947, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/77009"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/77009_13_201777152548668.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/77009">Bebou</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/58_20150226460.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html">Hannover</a></td>
+<td >STU</td>
+<td class="alignright">1,5</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(77009, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/45090"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/45090_12_20178316444896.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/45090">Schipplock</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/12_20150226216.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html">HSV</a></td>
+<td >STU</td>
+<td class="alignright">1,4</td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+<td class="alignright">-15</td>
+<td class="alignright">4,4</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(45090, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/51660"><img src="http://mediadb.kicker.de/2017/fussball/spieler/s/51660_9_20167271053828.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/51660">Mehmedi</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayer-leverkusen-9/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/9_20151221384.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/bayer-leverkusen-9/vereinsinformationen.html">Leverkusen</a></td>
+<td >STU</td>
+<td class="alignright">1,4</td>
+<td class="alignright">14</td>
+<td class="alignright">2,8</td>
+<td class="alignright">-7</td>
+<td class="alignright">4,3</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(51660, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/49571"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/49571_29_2017825112547924.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/49571">Schieber</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2013/fussball/vereine/s/29_20150226958.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html">Hertha</a></td>
+<td >STU</td>
+<td class="alignright">1,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">16</td>
+<td class="alignright">4,4</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(49571, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/94807"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/94807_17_2017814105019139.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/94807">Isak</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/17_20150212643.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-dortmund-17/vereinsinformationen.html">Dortmund</a></td>
+<td >STU</td>
+<td class="alignright">1,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(94807, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/75480"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/75480_4_20170807988.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/75480">Johannsson</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/4_20150225112.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html">Bremen</a></td>
+<td >STU</td>
+<td class="alignright">1,0</td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+<td class="alignright">2</td>
+<td class="alignright">4,2</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(75480, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/88376"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/88376_30_201771815125219.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/88376">Onisiwo</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/30_20150226018.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html">Mainz</a></td>
+<td >STU</td>
+<td class="alignright">1,0</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">3</td>
+<td class="alignright">4,1</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(88376, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/89442"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/89442_16_201772510022908.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/89442">Guirassy</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/16_20150226339.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html">Köln</a></td>
+<td >STU</td>
+<td class="alignright">1,0</td>
+<td class="alignright">-6</td>
+<td class="alignright">4,5</td>
+<td class="alignright">6</td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(89442, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/92270"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/92270_4_201772015263633.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/92270">Zhang</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/4_20150225112.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html">Bremen</a></td>
+<td >STU</td>
+<td class="alignright">1,0</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(92270, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/70598"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/70598_12_20178316447948.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/70598">Waldschmidt</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/12_20150226216.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html">HSV</a></td>
+<td >STU</td>
+<td class="alignright">0,8</td>
+<td class="alignright">3</td>
+<td class="alignright">3,5</td>
+<td class="alignright">-7</td>
+<td class="alignright">4,9</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(70598, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/87214"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/87214_30_201771815124963.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/87214">Berggreen</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/30_20150226018.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fsv-mainz-05-30/vereinsinformationen.html">Mainz</a></td>
+<td >STU</td>
+<td class="alignright">0,8</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(87214, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/50483"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/50483_4_2017720152553881.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/50483">Eilers</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/4_20150225112.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html">Bremen</a></td>
+<td >STU</td>
+<td class="alignright">0,7</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(50483, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/76954"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/76954_7_20178315518210.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/76954">Kleindienst</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/sc-freiburg-7/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2013/fussball/vereine/s/7_20150226893.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/sc-freiburg-7/vereinsinformationen.html">Freiburg</a></td>
+<td >STU</td>
+<td class="alignright">0,6</td>
+<td class="alignright">-2</td>
+<td class="alignright">4,5</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(76954, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/79554"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/79554_2_2017713154056387.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/79554">Reese</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-schalke-04-2/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/2.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/fc-schalke-04-2/vereinsinformationen.html">Schalke</a></td>
+<td >STU</td>
+<td class="alignright">0,6</td>
+<td class="alignright">2</td>
+<td class="alignright"></td>
+<td class="alignright">0</td>
+<td class="alignright">4,5</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(79554, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/87635"><img src="http://mediadb.kicker.de/2017/fussball/spieler/s/87635_4_201692616490464.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/87635">Manneh</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/4_20150225112.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html">Bremen</a></td>
+<td >STU</td>
+<td class="alignright">0,6</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">7</td>
+<td class="alignright">3,8</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(87635, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/92157"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/92157_24_2017828141216988.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/92157">Osimhen</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/24.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html">Wolfsburg</a></td>
+<td >STU</td>
+<td class="alignright">0,6</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">-2</td>
+<td class="alignright">4,5</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(92157, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/101982"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/101982_24_2017828141212406.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/101982">Hinds</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/24.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/vfl-wolfsburg-24/vereinsinformationen.html">Wolfsburg</a></td>
+<td >STU</td>
+<td class="alignright">0,6</td>
+<td class="alignright">-4</td>
+<td class="alignright">5,0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(101982, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/34463"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/34463_7_20178315514736.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/34463">Guedé</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/sc-freiburg-7/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2013/fussball/vereine/s/7_20150226893.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/sc-freiburg-7/vereinsinformationen.html">Freiburg</a></td>
+<td >STU</td>
+<td class="alignright">0,5</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">-1</td>
+<td class="alignright">4,3</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(34463, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/67059"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/67059_29_2017825112548564.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/67059">Kurt</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2013/fussball/vereine/s/29_20150226958.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hertha-bsc-29/vereinsinformationen.html">Hertha</a></td>
+<td >STU</td>
+<td class="alignright">0,5</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">2</td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(67059, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/75632"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/75632_4_2017720152558107.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/75632">Eggest., J.</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/4_20150225112.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/werder-bremen-4/vereinsinformationen.html">Bremen</a></td>
+<td >STU</td>
+<td class="alignright">0,5</td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(75632, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/82532"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/82532_15_201781691212818.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/82532">Yeboah</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/15_20160215710.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html">Gladbach</a></td>
+<td >STU</td>
+<td class="alignright">0,5</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(82532, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/65794"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/65794_58_201771815117922.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/65794">Benschop</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/58_20150226460.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html">Hannover</a></td>
+<td >STU</td>
+<td class="alignright">0,4</td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(65794, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/60335"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/60335_15778_201771815116680.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/60335">Palacios Martinez</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/rasenballsport-leipzig-15778/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2015/fussball/vereine/s/15778_20161005551.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/rasenballsport-leipzig-15778/vereinsinformationen.html">Leipzig</a></td>
+<td >STU</td>
+<td class="alignright">0,3</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">-3</td>
+<td class="alignright">4,5</td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(60335, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/81409"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/81409_3209_2017714143452869.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/81409">Skenderovic</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2017/fussball/vereine/s/3209_20160810469.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html">Hoffenheim</a></td>
+<td >STU</td>
+<td class="alignright">0,3</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(81409, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/91011"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/91011_12_20178316448828.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/91011">Arp</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/12_20150226216.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hamburger-sv-12/vereinsinformationen.html">HSV</a></td>
+<td >STU</td>
+<td class="alignright">0,3</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(91011, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/80589"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/80589_15_201781691212632.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/80589">Simakala</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/15_20160215710.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html">Gladbach</a></td>
+<td >STU</td>
+<td class="alignright">0,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">1</td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(80589, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/81828"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/81828_58_201781691212697.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/81828">Demir</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/58_20150226460.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html">Hannover</a></td>
+<td >STU</td>
+<td class="alignright">0,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(81828, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/82727"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/82727_3209_201781691213629.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/82727">Hack</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2017/fussball/vereine/s/3209_20160810469.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1899-hoffenheim-3209/vereinsinformationen.html">Hoffenheim</a></td>
+<td >STU</td>
+<td class="alignright">0,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(82727, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/86143"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/86143_32_201786121944621.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/86143">Dadashov</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/32_20150225964.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html">E. Frankfurt</a></td>
+<td >STU</td>
+<td class="alignright">0,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(86143, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/87703"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/87703_16_201781691213988.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/87703">Risa</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/16_20150226339.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/1-fc-koeln-16/vereinsinformationen.html">Köln</a></td>
+<td >STU</td>
+<td class="alignright">0,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(87703, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/90046"><img src="http://mediadb.kicker.de/2017/fussball/spieler/s/90046_4830_20170531976.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/90046">Emghames</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/58_20150226460.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/hannover-96-58/vereinsinformationen.html">Hannover</a></td>
+<td >STU</td>
+<td class="alignright">0,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(90046, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/93762"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/93762_32_201786121944970.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/93762">Mbouhom</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2009/fussball/vereine/s/32_20150225964.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/eintracht-frankfurt-32/vereinsinformationen.html">E. Frankfurt</a></td>
+<td >STU</td>
+<td class="alignright">0,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(93762, 4, true);return false;" href="#">merken</a></td>
+</tr>
+<tr class="tr_sep"><td colspan="12">&nbsp;</td></tr>
+<tr class="alt">
+<td class="first"><a class="splPicLink" href="/interactive/bundesliga/spieleranalyse/spielerid/99739"><img src="http://mediadb.kicker.de/2018/fussball/spieler/s/99739_15_201773116368967.jpg" /></a></td>
+  <td><a class="link" style="display:inline;" href="/interactive/bundesliga/spieleranalyse/spielerid/99739">Villalba</a></td>
+<td><a class="vrnLogo" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html"><img class="vrnLogo" src="http://mediadb.kicker.de/2016/fussball/vereine/s/15_20160215710.png" /></a></a><a class="link vrnMitLogo" target="_blank" href="http://www.kicker.de/news/fussball/bundesliga/vereine/1-bundesliga/borussia-mgladbach-15/vereinsinformationen.html">Gladbach</a></td>
+<td >STU</td>
+<td class="alignright">0,2</td>
+<td class="alignright">0</td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+<td class="alignright"></td>
+  <td class="alignright last"><a class="merken" onclick="ovWarenkorbAddSpieler(99739, 4, true);return false;" href="#">merken</a></td>
+</tr>
+</table>
+</div></div></div></div>
+<br />
+<div class="tabborder-t"><div class="tabborder-r"><div class="tabborder-b"><div class="tabborder-l">
+<div class="legende">PI = Punkte Interactive-Variante; DN = kicker-Durchschnittsnote; PI V. = Punkte Interactive-Variante Vorjahr; DN V. = kicker-Durchschnittsnote Vorjahr;</div>
+</div></div></div></div>
+<br />
+<div class="toolbarSta-b">
+<div class="publicdate">05.09.17, 13:26</div>
+<div class="toolbarSta">
+<script type="text/javascript">
+<!--
+ document.write('<a class="tb_print" id="tb_printbota" href="javascript:ovToolkit.print(this);"><img src="http://mediadb.kicker.de/library/image/ic-tb-print.png" alt=""/><span id="tb_printbot">Seite drucken<\/span><\/a>');
+ //-->
+ </script>
+<a href="http://www.kicker.de/home/sendurl.html?urltosend=http%3a%2f%2fmanager.kicker.de%2finteractive%2fbundesliga%2fspielerliste%2fposition%2f4%2fverein%2f0" id="ctl00_PlaceHolderContent_toolbar2_aSend" class="tb_send"><img src="http://mediadb.kicker.de/library/image/ic-tb-send.png" alt=""/><span>Seite versenden</span></a>
+<script type="text/javascript">
+<!--
+ document.write('<a href="javascript:void(0);" id="ctl00_PlaceHolderContent_toolbar2_aBookmark" class="tb_bookmark" onclick="ovCommShow(event,2,\&#39;http://manager.kicker.de/interactive/bundesliga/spielerliste/position/4/verein/0\&#39;,\&#39;Managerspiel Interactive Bundesliga - Spielerliste\&#39;);return false;"><img src="http://mediadb.kicker.de/library/image/ic-tb-bookmark.png" alt="" /><span>bookmark<\/span></a>');
+//-->
+ </script>
+</div>
+</div>
+&nbsp;
+</div>
+<!-- /content -->
+<!-- half -->
+<div id="ovHalf">
+ 
+ <div class="ovHalfBox">
+ <h3 class="thead336">Facebook Connect</h3>
+ <div class="ovHbShBottom"><div class="ovHbShLeft"><div class="ovHbShRight">
+ <div style="padding:0 6px 6px 11px; background-color:#fff;">
+ <div id="ctl00_PlaceHolderHalf_loginConnect_fbConnect" class="artikeltabelle">
+ <table width="100%" border="0" cellspacing="0" cellpadding="5" summary="Login">
+ <tr>
+ <td style="width:190px;">Vernetzen Sie sich noch besser mit Ihren Freunden, veröffentlichen Sie Ihren Kader oder posten Sie Ihr Spieltagsranking auf Facebook!</td>
+ <td style="border-left: 1px solid #bfbfbf; text-align:center;">
+ <a href="https://www.facebook.com/v2.7/dialog/oauth?response_type=code&display=popup&client_id=242756395742301&scope=email,user_photos,publish_actions,user_friends&redirect_uri=http://www.kicker.de/community/facebookConnect" onclick="facebookPopup(this.href); return false;"><img src="http://mediadb.kicker.de/library/images/fb_connect.jpg" alt="" /></a>
+ </td>
+ </tr>
+ </table>
+  <div class="sep13"></div>
+ </div>
+ </div>
+ </div></div></div>
+ </div>
+<div class="ovHalfStaBox">
+<!-- Warenkorb -->
+<h3 class="thead336">Ihr persönlicher Merkzettel</h3>
+<div class="tborder-b-s"><div class="tborder-r-s"><div class="tborder-t"><div class="tborder-l">
+<div id="warenkorb" class="ovHBContent">
+<div id="tab_wkb_navilinks" class="ovTab336 ovTab336x4">
+<a id="wkb_PlayerSelTab0" onclick="ovMarkSelected('tab_navilinks','PlayerSelTab0');ovShowWarenkorbSpieler(1, 0, false, true);return false;" href="#" class="sel">Torhüter (0)</a>
+<a id="wkb_PlayerSelTab1" onclick="ovMarkSelected('tab_navilinks','PlayerSelTab1');ovShowWarenkorbSpieler(2, 0, false, true);return false;" href="#" class="">Abwehr (0)</a>
+<a id="wkb_PlayerSelTab2" onclick="ovMarkSelected('tab_navilinks','PlayerSelTab2');ovShowWarenkorbSpieler(3, 0, false, true);return false;" href="#" class="">Mittelfeld (0)</a>
+<a id="wkb_PlayerSelTab3" onclick="ovMarkSelected('tab_navilinks','PlayerSelTab3');ovShowWarenkorbSpieler(4, 0, false, true);return false;" href="#" class="">Sturm (0)</a>
+</div> 
+<div id="table_wkb_links"> 
+<table cellspacing="0" cellpadding="0" class="tStat" width="100%">
+<tr>
+<th class="alignleft first" style="width:80px;"><a class="headlink-up" id="wkb_spieler01" onclick="" href="javascript:ovShowWarenkorbSpieler(1, 0, true, false);">Spieler</a></th>
+<th class="alignleft" style="width:80px"><a class="headlink" id="wkb_spieler02" onclick="" href="javascript:ovShowWarenkorbSpieler(1, 1, false, false);">Verein</a></th>
+<th class="alignleft mio" style="width:25px"><a class="headlink" id="wkb_spieler03" onclick="" href="javascript:ovShowWarenkorbSpieler(1, 2, false, false);"><span id="ctl00_PlaceHolderHalf_warenkorb_warenkorbCtrl_Label1">Mio</span></a></th>
+<th class="alignleft mio" style="width:20px"><a class="headlink" id="wkb_spieler04" onclick="" href="javascript:ovShowWarenkorbSpieler(1, 3, false, false);" onmouseover="ddrivetip('<div class=ddtooltip><div class=shadowH3><h3>Info</h3></div><div class=shadowP_r><div class=shadowP_b><p style=\'min-height:1px\'>PI: Punkte Interactive</p></div></div></div>');" onmouseout="hideddrivetip();"><span id="ctl00_PlaceHolderHalf_warenkorb_warenkorbCtrl_Label2">PI</span></a></th>
+<th>&nbsp;</th>
+</tr>
+</table>
+</div>
+<div style="height:140px;max-height:140px;width:334px;overflow:auto;overflow-x:hidden;display:block">
+<table cellspacing="0" cellpadding="0" class="tStat" style="width:333px;">
+<tr id="ctl00_PlaceHolderHalf_warenkorb_warenkorbCtrl_NoData">
+<td class="nodata" colspan="4"><div style="padding:6px 5px 16px 5px;">Der persönliche Merkzettel hilft Ihnen bei der Auswahl Ihres Kaders. Hier können Sie sich potenzielle Spieler für Ihren Kader vormerken, um so Ihr optimales Team zu entwickeln.<br /><br />Um einen Spieler vorzumerken ziehen Sie diesen einfach mittels Drag & Drop aus der Spielerauswahl auf diese Merkzettelfläche oder klicken Sie auf das "merken"-Icon. <img src="http://mediadb.kicker.de/library/img/merken_icon.gif" alt="" /></div></td>
+</tr>
+</table>
+</div>
+<div class="tabborder-t kaderinfo">
+<div id="budget">Gesamtsumme Ihres Merkzettels:&nbsp;</div>
+<div id="warenkorbtotalprice">0.0 Mio.</div>
+</div> 
+</div>
+<span id="Span1" style="height:1px;"> </span>
+</div></div></div></div>
+<script language="javascript" type="text/javascript">
+<!--
+ovShowWarenkorbSpieler(1, 0, false, true);
+var AMOUNT = new Array(3,6,8,5);
+//-->
+</script>
+</div>
+<div class="sep26"></div>
+ 
+<div class="ovHalfBox">
+<h3 class="thead336"></h3>
+<div class="ovHbShBottom"><div class="ovHbShLeft"><div class="ovHbShRight">
+ <div id="fbFanbox">
+ <fb:like-box profile_id="133812853338624" width="296" height="275" connections="15" stream="false" header="false" show_border="false"></fb:like-box>
+ </div>
+ </div></div></div>
+</div>
+
+ 
+<div id="ad-cb200" class="ovAdPromo"><div id="adposcb200"></div><script type="text/javascript">
+if (typeof(IM) != 'undefined') {IM.GlobalAdTag.register('cb200','adposcb200', true);}
+</script></div>
+ 
+ <div class="ovHalfBox"> 
+<h3><a href="http://www.kicker.de/games/interactive/startseite/gamesstartseite.html">Das kicker-Managerspiel Interactive</a></h3> 
+<div class="ovHbShBottom"><div class="ovHbShLeft"><div class="ovHbShRight"> 
+<div class="ovHBContent"> 
+<div class="ovHBimg"> 
+<a href="http://www.kicker.de/games/interactive/startseite/gamesstartseite.html"><img src="http://mediaproxy.kicker.de/v3/image/mediadb.kicker.de/IdentityFilter/quality85/news/1000/1030/67000/marginalie/linkbox/1001627/int340-1499961564.jpg" alt="" title="" border="0" width="315" height="140" /></a> 
+</div> 
+<div class="ovHBleft"> 
+<ul> 
+<li><a href="http://manager.kicker.de/interactive/bundesliga/meinteam/meinkader">Bundesliga-Team aufstellen</a></li> 
+<li><a href="http://manager.kicker.de/interactive/2bundesliga/meinteam/meinkader">Zweitliga-Team aufstellen</a></li> 
+<li><a href="http://manager.kicker.de/interactive/2bundesliga/meinteam/meinkader">Drittliga-Team aufstellen</a></li> 
+</ul> 
+</div> 
+<div class="ovHBleft"> 
+<ul> 
+<li><a href="http://www.kicker.de/games/interactive/bundesliga/spielregeln/artikel/679147">Spielregeln Bundesliga</a></li> 
+<li><a href="http://manager.kicker.de/interactive/2bundesliga/spielregeln/artikel/679151">Spielregeln 2. Liga</a></li> 
+<li><a href="http://manager.kicker.de/interactive/3liga/spielregeln/artikel/679156">Spielregeln 3. Liga</a></li> 
+</ul> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<div id="ad-cb200_pos2" class="ovAdPromo"><div id="adposcb200_pos2"></div><script type="text/javascript">
+if (typeof(IM) != 'undefined') {IM.GlobalAdTag.register('cb200_pos2','adposcb200_pos2', true);}
+</script></div>
+ 
+<div class="ovHalfBox"><div class="ovHbShBottom"><div class="ovHbShLeft"><div class="ovHbShRight"><div class="ovHBContent"><iframe width="336" height="200" frameborder="0" scrolling="no" src="https://shop.kicker.de/one/?q=tagesdeal|1.+Bundesliga"></iframe></div></div></div></div></div> 
+<div id="ad-cb200_pos3" class="ovAdPromo"><div id="adposcb200_pos3"></div><script type="text/javascript">
+if (typeof(IM) != 'undefined') {IM.GlobalAdTag.register('cb200_pos3','adposcb200_pos3', true);}
+</script></div>
+<div id="perf_anz" class="ovAdPromo">
+<div id="ad-perf_cb200" ><div id="adposperf_cb200"></div><script type="text/javascript">
+if (typeof(IM) != 'undefined') {IM.GlobalAdTag.register('perf_cb200','adposperf_cb200', true);}
+</script></div>
+</div>
+<br style="clear:left;" /> 
+</div>
+</div>
+<!-- 50JBL wrapper div end -->
+<!-- /half -->
+<div class="sepMain"></div>
+</div>
+<!-- /main -->
+<div id="chfooter_anz">
+<div id="ad-ft" ><div id="adposft"></div><script type="text/javascript">
+if (typeof(IM) != 'undefined') {IM.GlobalAdTag.register('ft','adposft', true);}
+</script></div>
+</div>
+<!-- footer -->
+<div id="ovFooter">
+<table width="100%"><tr>
+<th class="ovFooterColAll ovFooterCol0"><a href="http://www.kicker.de/">News</a></th>
+<th class="ovFooterColAll ovFooterCol1"><a class="ovFooterSel"href="http://www.kicker.de/games/startseite.html">Games</a></th>
+<th class="ovFooterColAll ovFooterCol2"><a href="http://community.kicker.de/community/">Community</a></th>
+<th class="ovFooterColAll ovFooterCol3"><a href="http://leserservice.kicker.de/start?onwewe=0601&utm_campaign=kickerde-navi&utm_term=abo">Abo</a></th>
+<th class="ovFooterColAll ovFooterCol0"><a href="http://esport.kicker.de">eSport</a></th>
+<th class="ovFooterColAll ovFooterCol0"><a href="http://mediadb.kicker.de/apps/">kicker Apps</a></th>
+<th class="ovFooterColAll ovFooterCol0"><a href="#">Tools &amp; Service</a></th>
+</tr>
+<tr>
+<td>
+<ul>
+<li>
+<a href="http://www.kicker.de/news/fussball/fussballstartseite.html">Fußball</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/live-news/schlagzeilen/schlagzeilen_fussball.html">Live</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/formel1/startseite.html">Formel 1</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/eishockey/startseite.html">Eishockey</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/basketball/startseite.html">Basketball</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/handball/startseite.html">Handball</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/tennis/startseite.html">Tennis</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/wintersport/startseite.html">Wintersport</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/radsport/startseite.html">Rad</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/nfl/startseite.html">NFL</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/mehrsport/startseite.html">Mehr Sport</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/olympia/startseite.html">Olympia</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/auto/startseite.html">Auto</a>
+</li>
+<li>
+<a href="http://www.kicker.de/news/video.html">Video</a>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>
+<a href="http://www.kicker.de/games/startseite/gamesstartseite.html">Startseite</a>
+</li>
+<li>
+<a href="http://www.kicker.de/games/classic/startseite/gamesstartseite.html">Classic</a>
+</li>
+<li>
+<a class="ovFooterSel"href="http://www.kicker.de/games/interactive/startseite/gamesstartseite.html">Interactive</a>
+</li>
+<li>
+<a href="http://www.kicker.de/games/pro/startseite/gamesstartseite.html">Pro</a>
+</li>
+<li>
+<a href="http://www.kicker.de/games/football_stars_manager/gamesstartseite.html">Football-Stars Manager</a>
+</li>
+<li>
+<a href="http://www.kicker.de/games/football_stars_challenges/gamesstartseite.html">Football-Stars Challenges</a>
+</li>
+<li>
+<a href="http://tipp.kicker.de/startseite.html">Tippspiel</a>
+</li>
+<li>
+<a href="http://www.kicker.de/games/kicker-glory-run/gloryrun.html">GloryRun</a>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>
+<a href="http://www.kicker.de/community/info/artikel/511628/">Info</a>
+</li>
+<li>
+<a href="https://secure.kicker.de/community/login">Anmelden</a>
+</li>
+<li>
+<a href="http://community.kicker.de/community/">Meine Startseite</a>
+</li>
+<li>
+<a href="http://community.kicker.de/community/card/">Visitenkarte &amp; Profil</a>
+</li>
+<li>
+<a href="http://community.kicker.de/community/foren/">Foren</a>
+</li>
+<li>
+<a href="http://community.kicker.de/community/friends/">Freunde</a>
+</li>
+<li>
+<a href="http://community.kicker.de/community/bookmarks/">Bookmarks</a>
+</li>
+<li>
+<a href="http://community.kicker.de/community/messages/Eingang/">Messages</a>
+</li>
+<li>
+<a href="http://www.kicker.de/community/newsletter/artikel/244964/">Newsletter</a>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>
+<a href="http://leserservice.kicker.de/?onwewe=0602&utm_campaign=kickerde-navi&utm_term=kicker-abo-angebote">kicker Abo</a>
+</li>
+<li>
+<a href="http://leserservice.kicker.de/emagazine?onwewe=0601&utm_campaign=kickerde-navi&utm_term=emagazine-abo-angebote">eMagazine Abo</a>
+</li>
+<li>
+<a href="http://leserservice.kicker.de/erlebniswelt/?onwewe=0601&utm_campaign=kickerde-navi&utm_term=erlebniswelt">Erlebniswelt</a>
+</li>
+<li>
+<a href="https://emagazine.kicker.de/de/profiles/6925623b4e1b/editions">eMagazine-Login</a>
+</li>
+<li>
+<a href="http://www.kicker.de/abo-shop/lesesaal/624781/spartikel_kicker-lesesaal.html">Lesesaal</a>
+</li>
+<li>
+<a href="https://shop.kicker.de/kicker-produkte/einzelhefte/?utm_source=Kicker.de&utm_campaign=navi&utm_medium=button&utm_content=einzelheftebestellen">Einzelhefte bestellen</a>
+</li>
+<li>
+<a href="http://www.mykiosk.com/suche/11000160/kicker/">kicker am Kiosk kaufen</a>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://esport.kicker.de/esport/fifa/info/startseite.html">FIFA</a></li>
+<li><a href="http://esport.kicker.de/esport/pes/info/startseite.html">PES</a></li>
+<li><a href="http://esport.kicker.de/esport/dota2/info/startseite.html">DOTA2</a></li>
+<li><a href="http://esport.kicker.de/esport/lol/info/startseite.html">LOL</a></li>
+<li><a href="http://esport.kicker.de/esport/scii/info/startseite.html">SCII</a></li>
+<li><a href="http://esport.kicker.de/esport/mehresport/info/startseite.html">MEHR SPORT</a></li>
+<li><a href="http://esport.kicker.de/esport/sportgames/info/startseite.html">SPORTGAMES</a></li>
+<li><a href="http://esport.kicker.de/esport/videos/video.html">VIDEOS</a></li>
+<li><a href="http://esport.kicker.de/esport/cups/esportcup.html">CUPS</a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li><a href="http://mediadb.kicker.de/apps/fussballnews.html">Fußball News</a></li>
+<li><a href="http://mediadb.kicker.de/apps/meinverein.html">MeinVerein</a></li>
+<li><a href="http://mediadb.kicker.de/apps/emagazine.html">eMagazine</a></li>
+<li><a href="http://mediadb.kicker.de/apps/tippspiel.html">Tippspiel</a></li>
+<li><a href="http://mediadb.kicker.de/apps/fussballquiz.html">FußballQuiz</a></li>
+<li><a href="http://mediadb.kicker.de/apps/smarttv.html">SmartTV</a></li>
+<li><a href="http://mediadb.kicker.de/apps/gloryrun.html">GloryRun</a></li>
+</ul>
+</td>
+<td>
+<ul>
+<li><i class="icon-question" style="font-size: 14px;color:#DDDDDD;"></i><a href="http://www.kicker.de/home/527693/artikel_Hilfe-gesucht.html" class="ovHelp">Hilfe</a></li>
+<li><a class="tools fb" href="http://www.kicker.de/news/live-news/facebook/545101/artikel_kicker-online-auf-facebook.html ">Facebook</a></li>
+<li><a class="tools twi" href="http://www.kicker.de/news/live-news/twitter/507014/artikel_kicker-bei-Twitter.html">Twitter</a></li>
+<li><a class="tools ig" href="http://www.kicker.de/news/live-news/google-plus/569795/artikel_kicker-online-bei-google2b.html">Google+</a></li>
+<li><a class="tools rss" href="http://www.kicker.de/news/live-news/rss-feed/371919/artikel_Mit-RSS-immer-informiert.html">RSS</a></li>
+<li><a class="tools pod" href="http://www.kicker.de/news/live-news/podcast.html">Podcast</a></li>
+<li><a class="tools foo" href="http://www.kicker.de/news/live-news/footiefox/371920/artikel_Immer-live-dabei-mit-FootieFox.html">Footiefox</a></li>
+<li><a class="tools new" href="http://www.kicker.de/community/newsletter/artikel/244964/">Newsletter</a></li>
+<li><a class="tools sta" href="http://www.kicker.de/" onclick="ovToolkit.Startseite();">kicker.de als Startseite</a></li>
+</ul>
+</td>
+</tr></table>
+<a href="#ovanfang" onclick="Effect.ScrollTo('ovanfang'); return false;" class="ovGoTop">nach&nbsp;oben</a>
+<hr />
+<p>
+<a href="https://secure.kicker.de/home/kontakt.html">Kontakt</a> | 
+<a href="http://www.kicker.de/goto/2325124D-790D-42DC-AB9B-0333B2F33E86">Jobs</a> | 
+<a href="http://www.kicker.de/home/316443/impressum-kicker-online.html">Impressum</a> |
+<a href="http://www.kicker.de/home/links.html">Links</a> | 
+<a href="http://www.kicker.de/home/350282/nutzungsbedingungen.html">Nutzungsbedingungen</a> | 
+<a href="http://www.kicker.de/home/513381/datenschutzhinweis.html">Datenschutzhinweis</a> | 
+<a class="nutz"href="http://www.t-online.de/nutzungsbasierte-online-werbung/id_56770518/index" target="_blank">Nutzungsbasierte Online-Werbung</a> 
+<span id="ovKcsLink" style="display:none;">| 
+<a href="#" onclick="ovToolkit.gotoMobileSite();return false;">zur mobilen Ansicht wechseln</a>
+</span>
+</p>
+<p id="ctl00_ControlFooter_devBy">
+powered by <a href="http://www.netpioneer.de" target="_blank">netpioneer</a>
+</p>
+<p>
+Weitere Angebote des Olympia-Verlags:<br />
+<a href="http://www.alpin.de" target="_blank">alpin.de</a> | 
+<a href="http://www.olympia-verlag.de" target="_blank">olympia-verlag.de</a>
+</p>
+<script type="text/javascript">
+<!--
+if (ovToolkit.isBrowserMobileClient() == true) { $("ovKcsLink").style.display = "inline"; }
+//-->
+</script>
+<script language="javascript" type="text/javascript" src="http://community.kicker.de/community/functions.js"></script>
+</div>
+<!-- /footer -->
+</div>
+<!-- /kicker -->
+<div class="ovNoprint" style="float: left;position: relative;margin-left: 10px;">
+<script type="text/javascript">
+//gqPYbsU("Sky")
+</script>
+<div id="ad-sky" ><div id="adpossky"></div><script type="text/javascript">
+if (typeof(IM) != 'undefined') {IM.GlobalAdTag.register('sky','adpossky', true);}
+</script></div>
+<span class='gqPYbsU_end'></span>
+</div>
+</div>
+<!-- /wrapper -->
+<div id="pres_anz">
+<div id="ad-pop" ><div id="adpospop"></div><script type="text/javascript">
+if (typeof(IM) != 'undefined') {IM.GlobalAdTag.register('pop','adpospop', true);}
+</script></div>
+</div>
+<script type="text/javascript">
+ovAdvertising.loadAllPositions();
+</script>
+<script type="text/javascript">
+var x11 = ovAuth.getCookieProp("adp", "adp_x11");
+var x21 = ovAuth.getCookieProp("adp", "adp_x21");
+var x31 = ovAuth.getCookieProp("adp", "adp_x31");
+if ((x11 != null && x11.length > 0) || (x21 != null && x21.length > 0) || (x31 != null && x31.length > 0)) {
+window._enqAdpParam = window._enqAdpParam || {};
+if (x11 != null && x11.length > 0) {
+window._enqAdpParam.gender = x11;
+}
+if (x21 != null && x21.length > 0) {
+window._enqAdpParam.yob = x21;
+}
+if (x31 != null && x31.length > 0) {
+window._enqAdpParam.zip = x31;
+}
+}
+</script>
+<script type="text/javascript" src="//dyn.emetriq.de/loader/69511/default.js" async></script>
+<!-- SiteCatalyst code version: H.22.1.
+Copyright 1996-2010 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="javascript" type="text/javascript" src="http://static.kicker.de/generic/js/om_17.35.6456.23186.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+/* You may give each page an identifying name, server, and channel on the next lines. */
+if (typeof (ovs) != "undefined") {
+ovPageName = "Spielerliste: " + document.title.replace(' - kicker', '');
+if (ovPageName.indexOf("#controlname") > -1) { ovPageName = ovPageName.replace("#control", "template").replace("name#", "") };
+ovs.pageName = ovPageName; 
+ovs.channel = "Games"; 
+ovs.server = "WWW57";
+ovs.pageType = "";
+ovs.prop1 = ""
+ovs.prop2 = ""; 
+ovs.prop3 = "Website";
+ovs.prop4 = "1-bundesliga_1/Spielerliste";
+ovs.prop5 = "Spielerliste";
+ovs.prop6 = "Interactive";
+ovs.prop7 = "Bundesliga";
+ovs.prop8 = "Spielerliste";
+ovs.prop9 = "Spielerliste";
+ovs.prop10 = "kicker";
+try {
+if (ovAuth.authExists()) {
+if (ovAuth.getCookieProp("teilnehmer", "accesscode") != null && ovAuth.getCookieProp("teilnehmer", "accesscode").length > 0) {
+ovs.prop15 = "FB Logged-in";
+} else {
+ovs.prop15 = "Logged-in";
+}
+} else {
+ovs.prop15 = "Not logged-in";
+}
+} catch (e) { ovs.prop15 = "Not logged-in"; }
+if (location.hash.indexOf("omsearchresult") > -1) {
+ovs.prop16 = ovPageName;
+}
+ovs.prop12 = "";
+ovs.prop13 = "";
+ovs.prop14 = "";
+ovs.prop18 = "1-bundesliga_1";
+ovs.prop19 = "2017/18";
+ovs.prop20 = "2";
+ovs.prop21 = "";
+ovs.prop25 = "Games"; 
+if (typeof ovKickerPlayer != "undefined") {
+ovs.eVar17 = ovKickerPlayer.videoName;
+ovs.prop40 = ovs.eVar17;
+}
+var ovHierachie = "Spielerliste";
+if (ovHierachie.indexOf("#") > -1) {
+ovHierachie = "";
+} else {
+if (ovHierachie.indexOf("/") != 0) { ovHierachie = "/" + ovHierachie;}
+}
+ovs.hier1 = "games/interactive/bundesliga/spielerliste" + ovHierachie; 
+ovs.eVar10 = "kicker-Managerspiel zur Bundesliga 2017/18";
+ovs.eVar12 = "Website";
+if (location.hash.indexOf("omcampaign") > -1) {
+ovs.campaign = location.hash.replace("#", ""); 
+}
+if (location.hash.indexOf("omfb") > -1 || location.hash.indexOf("omsm") > -1 || location.hash.indexOf("omtw") > -1 || location.hash.indexOf("omEmail") > -1 || location.hash.indexOf("omWhatsapp") > -1) {
+ovs.eVar3 = location.hash.replace("#", ""); 
+ovs.events = "event15";
+}
+if (location.hash.indexOf("omfeatured") > -1) {
+ovs.eVar14 = location.hash.replace("#", ""); 
+ovs.events = "event6";
+}
+if (location.hash.indexOf("omrss") > -1) {
+ovs.events = "event12";
+}
+if (location.hash.indexOf("omgoto") > -1) {
+ovs.events = "event11";
+}
+if (document.title.indexOf("Wegweiser") > -1) {
+ovs.events = "event7";
+}
+if (location.hash.indexOf("omWhatsappPost") > -1 || location.hash.indexOf("omtwSharePost") > -1 || location.hash.indexOf("omShort") > -1) {
+ovs.eVar31 = location.hash.replace("#", "");
+if (typeof ovs.events != "undefined" && ovs.events.length > 0) {
+ovs.events = ovs.events + ",event25";
+}
+else {
+ovs.events = "event25";
+}
+}
+//Korrektur
+if (ovs.prop7.indexOf("#") > -1) { ovs.prop7 = ""; }
+if (ovs.prop8.indexOf("#") > -1) { ovs.prop8 = ""; }
+if (ovs.prop9.indexOf("#") > -1) { ovs.prop9 = ""; }
+if (ovs.prop5.indexOf("#") > -1) { ovs.prop5 = "template"; }
+if (ovs.prop4.indexOf("#") > -1) { ovs.prop4 = ""; }
+if (ovs.prop18.indexOf("#") > -1) { ovs.prop18 = ""; }
+if (ovs.prop19.indexOf("#") > -1) { ovs.prop19 = ""; }
+if (ovs.prop20.indexOf("#") > -1) { ovs.prop20 = ""; }
+if (ovs.prop25.indexOf("#") > -1) { ovs.prop25 = "sonstige"; }
+if (ovs.eVar10.indexOf("#") > -1) { ovs.eVar10 = ""; }
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code = ovs.t(); if (s_code) document.write(s_code)
+} else {
+console.error("OV: ovs is not defined");
+}
+//-->
+</script>
+<script language="JavaScript" type="text/javascript"><!--
+if (navigator.appVersion.indexOf('MSIE') >= 0) document.write(unescape('%3C') + '\!-' + '-')
+//--></script><noscript><img src="http://ue.kicker.de/b/ss/olyverkickerprod/1/H.22.1--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.22.1. -->
+<script src="//tag.aticdn.net/582425/smarttag.js"></script>
+<script type="text/javascript">
+var ovATItracking = {
+trackIdDev: '582425',
+trackIdLive: '584937',
+trackId: 0,
+trackVars: {},
+level2Id: 0,
+atiTag: undefined,
+pageName: 'Spielerliste: ' + document.title.replace(' - kicker', '') + '', //ovs.pageName,
+channel: 'Games', //ovs.channel,
+pageType: '', //ovs.pageType,
+searchPhrase: '', //ovs.prop1,
+searchResults: '', //ovs.prop2,
+platform: 'Website', //ovs.prop3,
+objectId: '1-bundesliga_1/Spielerliste', //ovs.prop4,
+contentType: 'Spielerliste', //ovs.prop5,
+subSection1: 'Interactive', //ovs.prop6,
+subSection2: 'Bundesliga', //ovs.prop7,
+subSection3: 'Spielerliste', //ovs.prop8,
+subSection4: '', //ovs.prop9,
+mandant: 'kicker', //ovs.prop10,
+slideshow: '', //ovs.prop12,
+team: '', //ovs.prop13,
+match: '', //ovs.prop14,
+logStatus: '', //ovs.prop15,
+league: '1-bundesliga_1', //ovs.prop18,
+season: '2017/18', //ovs.prop19,
+matchday: '2', //ovs.prop20,
+sports: '', //ovs.prop21,
+contentGroup: 'Games', //ovs.prop25,
+init: function(){
+ovDebug.debug('ovATItracking.init');
+switch (window.location.hostname) {
+case 'manager.kicker.de':
+case 'msp.kicker.de':
+case 'tipp.kicker.de':
+case 'quiz.kicker.de':
+case 'f1manager.kicker.de':
+case 'shop.kicker.de':
+case 'www.kicker.de':
+case 'secure.kicker.de':
+case 'www.kicker.at':
+case 'fotogalerien.kicker.de':
+case 'cetv.kicker.de':
+case 'nettv.kicker.de':
+case 'social.kicker.de':
+case 'community.kicker.de':
+case 'esport.kicker.de':
+case 'esportcup.kicker.de':
+case 'gratulationsbuch.kicker.de':
+case 'olympia.kicker.de':
+case 'wintersport.kicker.de':
+case 'anfahrt.kicker.de':
+case 'mediadb.kicker.de':
+this.trackId = this.trackIdLive;
+break;
+default:
+this.trackId = this.trackIdDev;
+break;
+};
+this.setTrackVars();
+this.setLevel2Id();
+this.createATITag();
+},
+setTrackVars: function(){ 
+ovDebug.debug('ovATItracking.setTrackVars');
+//correction
+if (this.subSection2.indexOf('#') > -1) { this.subSection2 = ''; }
+if (this.subSection3.indexOf('#') > -1) { this.subSection3 = ''; }
+if (this.subSection4.indexOf('#') > -1) { this.subSection4 = ''; }
+if (this.contentType.indexOf('#') > -1) { this.contentType = 'template'; }
+if (this.objectId.indexOf('#') > -1) { this.objectId = ''; }
+if (this.league.indexOf('#') > -1) { this.league = ''; }
+if (this.season.indexOf('#') > -1) { this.season = ''; }
+if (this.matchday.indexOf('#') > -1) { this.matchday = ''; }
+if (this.contentGroup.indexOf('#') > -1) { this.contentGroup = 'sonstige'; }
+if (this.pageName.indexOf('Spielerliste') > -1) { this.pageName = this.pageName.replace('Spielerliste', 'template') };
+try {
+if (ovAuth.authExists()) {
+if (ovAuth.getCookieProp('teilnehmer', 'accesscode') != null && ovAuth.getCookieProp('teilnehmer', 'accesscode').length > 0) {
+this.logStatus = 'FB Logged-in';
+} else {
+this.logStatus = 'Logged-in';
+}
+} else {
+this.logStatus = 'Not logged-in';
+}
+} catch (e) { 
+this.logStatus = 'Not logged-in'; 
+}
+this.trackVars = {
+1:'[' + ((this.subSection1) ? encodeURIComponent(this.subSection1) : '') + ']',
+2:'[' + ((this.subSection2) ? encodeURIComponent(this.subSection2) : '') + ']',
+3:'[' + ((this.subSection3) ? encodeURIComponent(this.subSection3) : '') + ']',
+4:'[' + ((this.subSection4) ? encodeURIComponent(this.subSection4) : '') + ']',
+5:'[' + ((this.platform) ? encodeURIComponent(this.platform) : '') + ']',
+6:'[' + ((this.objectId) ? encodeURIComponent(this.objectId) : '') + ']',
+7:'[' + ((this.contentType) ? encodeURIComponent(this.contentType) : '') + ']',
+8:'[' + ((this.mandant) ? encodeURIComponent(this.mandant) : '') + ']',
+9:'[' + ((this.slideshow) ? encodeURIComponent(this.slideshow) : '') + ']',
+10:'[' + ((this.team) ? encodeURIComponent(this.team) : '') + ']',
+11:'[' + ((this.match) ? encodeURIComponent(this.match) : '') + ']',
+12:'[' + ((this.league) ? encodeURIComponent(this.league) : '') + ']',
+13:'[' + ((this.season) ? encodeURIComponent(this.season) : '') + ']',
+14:'[' + ((this.matchday) ? encodeURIComponent(this.matchday) : '') + ']',
+15:'[' + ((this.sports) ? encodeURIComponent(this.sports) : '') + ']',
+16:'[' + ((this.contentGroup) ? encodeURIComponent(this.contentGroup) : '') + ']',
+17:'[' + ((this.logStatus) ? encodeURIComponent(this.logStatus) : '') + ']',
+18:'[' + ((this.pageType) ? encodeURIComponent(this.pageType) : '') + ']',
+19:'[' + encodeURIComponent(document.location.href.split('//')[1]) + ']',
+20:'[' + encodeURIComponent(document.referrer.split('//')[1]) + ']'
+}
+},
+setLevel2Id:function(){
+var level2Name = this.channel.toLowerCase();
+switch(level2Name) {
+case 'news':
+this.level2Id = '1';
+break;
+case 'games':
+this.level2Id = '2';
+break;
+case 'community':
+this.level2Id = '3';
+break;
+case 'shop':
+this.level2Id = '4';
+break;
+case 'abo':
+this.level2Id = '5';
+break;
+case 'mobile':
+this.level2Id = '6';
+break;
+default:
+this.level2Id = '0';
+}
+if(this.mandant.toLowerCase() == 'esport') {
+this.level2Id = '7';
+}
+},
+createATITag:function(){
+ovDebug.debug('ovATItracking.createATITag');
+try {
+this.atiTag = new ATInternet.Tracker.Tag({
+site: this.trackId,
+cookieDomain:''
+});
+this.atiTag.page.set({
+name: encodeURIComponent(this.pageName),
+level2: this.level2Id
+});
+this.atiTag.customVars.set({
+site:this.trackVars
+});
+if(this.contentType === 'suche') {
+var _resultPageNumber = '0';
+var _keyword = encodeURIComponent(this.searchPhrase.replace(/'/g, ''));
+var results = this.searchResults;
+if(results > 0) { 
+_resultPageNumber = '1';
+} 
+this.atiTag.internalSearch.set({
+keyword: _keyword,
+resultPageNumber: _resultPageNumber
+});
+}
+this.atiTag.dispatch();
+}catch(e){}
+},
+sendATIRequest: function(controlname) {
+var ajaxControlname = controlname;
+if (window.location.hostname == 'community.kicker.de')
+ajaxControlname = 'community';
+//if (typeof (ajaxControlname) == "string" && ajaxControlname.indexOf("_content") > -1) {
+//ovATItracking.sendPageRequest(ajaxControlname);
+//}else{
+ovATItracking.sendAjaxRequest(ajaxControlname);
+//}
+},
+sendPageRequest:function(){
+ovDebug.debug('ovATItracking.sendPageRequest');
+ovATItracking.atiTag.page.set({
+name: ovATItracking.pageName
+}); 
+ovATItracking.atiTag.dispatch();
+},
+sendAjaxRequest:function(controlname){
+ovDebug.debug('ovATItracking.sendAjaxRequest');
+//ovATItracking.atiTag.click.send({
+//name: 'ajax: ' + controlname,
+//level2:ovATItracking.level2Id, 
+//type:'navigation'
+//});
+ovATItracking.atiTag.page.set({
+name: 'ajax: ' + controlname,
+level2: ovATItracking.level2Id
+}); 
+ovATItracking.atiTag.customVars.set({
+site:ovATItracking.trackVars
+});
+ovATItracking.atiTag.dispatch();
+},
+}
+ovATItracking.init();
+</script>
+
+<!-- Google Code für ein Remarketing-Tag -->
+<!--------------------------------------------------
+Remarketing-Tags dürfen nicht mit personenbezogenen Daten verknüpft oder auf Seiten platziert werden, die sensiblen Kategorien angehören. Weitere Informationen und Anleitungen zur Einrichtung des Tags erhalten Sie unter: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 941727833;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;"><img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/941727833/?value=0&guid=ON&script=0"/></div>
+</noscript>
+<img id="ovImgTrackInt" height="1" width="1" style="border-style:none;" alt="" src="http://mediadb.kicker.de/library/image/spacer.gif"/>
+</body>
+</html>
